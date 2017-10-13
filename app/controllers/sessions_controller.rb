@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   end
 
   def current_user
-    @user = params[:name]
+    session[:name]
   end
 
   def destroy
