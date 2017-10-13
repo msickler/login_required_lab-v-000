@@ -12,10 +12,6 @@ class SessionsController < ApplicationController
     end
   end
 
-  def current_user
-    session[:name]
-  end
-
   def destroy
     session.delete :name
     redirect_to '/new'
