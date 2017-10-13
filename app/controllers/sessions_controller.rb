@@ -12,9 +12,9 @@ class SessionsController < ApplicationController
     end
   end
 
-  def current_user 
-    params[:name]
-  end 
+  def current_user
+    @user = params[:name]
+  end
 
   def destroy
     session.delete :name
