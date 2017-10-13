@@ -4,4 +4,8 @@ class SecretsController < ApplicationController
   def show
   end
 
+  def require_login
+    redirect_to '/login' until session.include? :name
+  end 
+
 end
