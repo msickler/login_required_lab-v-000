@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+
   def new
   end
 
@@ -10,6 +11,10 @@ class SessionsController < ApplicationController
       redirect_to '/'
     end
   end
+
+  def current_user 
+    params[:name]
+  end 
 
   def destroy
     session.delete :name
