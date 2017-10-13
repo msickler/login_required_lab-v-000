@@ -6,6 +6,6 @@ class SecretsController < ApplicationController
 
   def require_login
     redirect_to '/login' until session.include? :name
-  end 
+  end
 
 end
