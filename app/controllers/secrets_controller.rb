@@ -6,7 +6,7 @@ class SecretsController < ApplicationController
       redirect_to '/sessions/login'
      end
   end
-  
+
 
 
 end
