@@ -5,7 +5,7 @@ class SecretsController < ApplicationController
   end
 
   def require_login
-    redirect_to '/login' until session.include? :name
+    redirect_to '/login' unless session.include? :name
   end
 
 end
